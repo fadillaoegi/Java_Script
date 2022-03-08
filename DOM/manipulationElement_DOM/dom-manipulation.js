@@ -1,5 +1,4 @@
-// Manipulation DOM innerHTML
-
+// Manipulation ELEMENT DOM innerHTML
 const data = document.getElementById('title');
 // data.innerHTML = '<b>Fadil broo</b>';
 
@@ -10,23 +9,23 @@ const sec = document.querySelector('section#a');
 const stile = document.getElementsByTagName('h1')[0];
 stile.style.backgroundColor = 'salmon';
 // Manipulation DOM Attribute BytagName
-stile.setAttribute('id', 'style');
+// stile.setAttribute('id', 'style');
 // Mengambil Attribute
 // stile.getAttribute('id');
 // Menghapus Attribute
 // stile.removeAttribute('href');
 
 // Manipulation DOM Attribute querySelector
-const attri = document.querySelector('section#a a');
+// const attri = document.querySelector('section#a a');
 // Menambah Attribute
-attri.setAttribute('id', 'blalba');
+// attri.setAttribute('id', 'blalba');
 // Mengambil Attribute
 // attri.getAttribute('id');
 // Menghapus Attribute
 // attri.removeAttribute('href');
 
 // Manipulation DOM Attribute
-const p2 = document.querySelector('.p2');
+// const p2 = document.querySelector('.p2');
 // setAttribute -> Menimpa
 // p2.setAttribute('class', 'label');
 
