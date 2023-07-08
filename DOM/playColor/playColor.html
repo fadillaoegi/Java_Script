@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayColor DOM</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0 auto;
         padding: 0 auto;
     }
+
+    .container {
+        margin: 20px;
+    }
+
+    .container h5 {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        margin-top: 20px;
+    }
+
+    .button-group button {
+        padding: 10px;
+        /* margin: 10px auto; */
+    }
+
+    .slide-group {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* input .red{
+        color: red;
+        background-color: red;
+    } */
 </style>
+
 <body>
 
-    <div class="container">
+    <div class="container" align="center">
+
+        <section id="section1">
+            <h1>Play with color</h1>
+            <h5>By: @fdlml_</h5>
+        </section>
+        <hr>
+        <section id="section2">
+            <div class="button-group">
+                <button id="change">ChangeBlackColor</button>
+                <button id="random">RandomColor</button>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="slide-group">
+                <input type="range" class="red">
+                <input type="range" class="green">
+                <input type="range" class="blue">
+            </div>
+        </section>
 
     </div>
-    
 
-    <script src="playColor.js">
+
+    <script>
+
+        const darkmode = document.querySelector('#change');
+        const random = document.querySelector('#random');
+
+        darkmode.addEventListener('click', function () {
+            darkmode.style.body.color = 'white';
+            darkmode.style.body.backgroundColor = 'black';
+        });
+
+        random.addEventListener('click', function () {
+            random.style.color = 'red';
+            random.style.backgroundColor = 'white';
+        });
+
+        // console.log(modeOn);
+
 
     </script>
 </body>
+
 </html>
