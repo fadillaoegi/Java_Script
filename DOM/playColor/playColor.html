@@ -52,8 +52,8 @@
         <hr>
         <section id="section2">
             <div class="button-group">
-                <button id="changes">ChangeBlackColor</button>
-                <button id="random">RandomColor</button>
+                <button class="changes">ChangeBlackColor</button>
+                <button class="random">RandomColor</button>
             </div>
         </section>
 
@@ -70,12 +70,17 @@
 
     <script>
 
-        const darkmode = document.querySelector('#changes');
-        const random = document.querySelector('#random');
+        const darkmode = document.querySelector('.changes');
+        const random = document.querySelector('.random');
 
         darkmode.addEventListener('click', function () {
+            // var element = document.getElementById("myDIV");
+            // element.classList.toggle("mystyle");
             document.body.style.color = 'white';
             document.body.style.backgroundColor = 'black';
+            darkmode.classList.toggle('changes');
+
+
         });
 
         random.addEventListener('click', function () {
