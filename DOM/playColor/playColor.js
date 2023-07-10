@@ -1,12 +1,16 @@
+// DECLARATION
 const darkmode = document.querySelector('#darkmode');
-// const random = document.querySelector('.random');
+const sliderRed = document.querySelector('.Sred');
+const sliderGreen = document.querySelector('.Sgreen');
+const sliderBlue = document.querySelector('.Sblue');
+
 
 // MENAMBAHKAN HTLML PADA JS
 const randomButton = document.createElement('button');
 const tittleButton = document.createTextNode('Random');
 randomButton.appendChild(tittleButton);
 randomButton.setAttribute('type', 'button');
-darkmode.after(darkmode);
+darkmode.after(randomButton);
 
 
 // MENAMBAHKAN OnClickListener PADA JS
@@ -15,13 +19,32 @@ darkmode.addEventListener('click', function () {
     // document.body.style.color = 'white';
     // document.body.style.backgroundColor = 'black';
     document.body.classList.toggle('changes');
-
-
 });
 
-// random.addEventListener('click', function () {
-//     document.body.style.color = 'white';
-//     document.body.style.backgroundColor = 'salmon';
-// });
+randomButton.addEventListener('click', function () {
+    const red = Math.round(Math.random() * 255 + 1);
+    const green = Math.round(Math.random() * 255 + 1);
+    const blue = Math.round(Math.random() * 255 + 1);
+    document.body.style.backgroundColor = 'rgb('+ red +','+ green +',' + blue +')';
+});
 
-// console.log(modeOn);
+sliderRed.addEventListener('input', function () {
+    const red = Math.round(Math.random() * 255 + 1);
+    const green = Math.round(Math.random() * 255 + 1);
+    const blue = Math.round(Math.random() * 255 + 1);
+    document.body.style.backgroundColor = 'rgb('+ red +','+ green +',' + blue +')';
+});
+
+sliderGreen.addEventListener('input', function () {
+    const red = Math.round(Math.random() * 255 + 1);
+    const green = Math.round(Math.random() * 255 + 1);
+    const blue = Math.round(Math.random() * 255 + 1);
+    document.body.style.backgroundColor = 'rgb('+ red +','+ green +',' + blue +')';
+});
+
+sliderBlue.addEventListener('input', function () {
+    const red = Math.round(Math.random() * 255 + 1);
+    const green = Math.round(Math.random() * 255 + 1);
+    const blue = Math.round(Math.random() * 255 + 1);
+    document.body.style.backgroundColor = 'rgb('+ red +','+ green +',' + blue +')';
+});

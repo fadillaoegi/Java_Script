@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayColor DOM</title>
 </head>
-<style>
+
+<style >
     * {
         margin: 0 auto;
         padding: 0 auto;
@@ -41,18 +42,23 @@
         flex-direction: column;
     }
 
+    input[type='range']{
+        background-color: #9a905d;
+    }
+
     section .card{
         margin-top: 20px;
-        width: 400px;
-        height: 300px;
+        width: 100px;
+        height: 100px;
         background-color: salmon;
         border-radius: 20px;
+        transition: 1s ease;
     }
 
     section .card:hover{
         margin-top: 20px;
-        width: 400px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         background-color: skyblue;
         cursor: pointer;
     }
@@ -81,9 +87,9 @@
 
         <section id="section3">
             <div class="slide-group">
-                <input type="range" class="red">
-                <input type="range" class="green">
-                <input type="range" class="blue">
+                <input type="range" class="Sred">
+                <input type="range" class="Sgreen">
+                <input type="range" class="Sblue">
             </div>
         </section>
 
