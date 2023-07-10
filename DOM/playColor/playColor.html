@@ -11,6 +11,10 @@
         margin: 0 auto;
         padding: 0 auto;
     }
+    .changes{
+        background-color: black;
+        color: white;
+    }
 
     .container {
         margin: 20px;
@@ -22,6 +26,8 @@
 
     .button-group {
         margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .button-group button {
@@ -33,6 +39,22 @@
         margin-top: 60px;
         display: flex;
         flex-direction: column;
+    }
+
+    section .card{
+        margin-top: 20px;
+        width: 400px;
+        height: 300px;
+        background-color: salmon;
+        border-radius: 20px;
+    }
+
+    section .card:hover{
+        margin-top: 20px;
+        width: 400px;
+        height: 300px;
+        background-color: skyblue;
+        cursor: pointer;
     }
 
     /* input .red{
@@ -52,8 +74,8 @@
         <hr>
         <section id="section2">
             <div class="button-group">
-                <button class="changes">ChangeBlackColor</button>
-                <button class="random">RandomColor</button>
+                <button id="darkmode">Darkmode</button>
+                <!-- <button class="random">RandomColor</button> -->
             </div>
         </section>
 
@@ -65,31 +87,16 @@
             </div>
         </section>
 
+        <section>
+            <div class="card">
+               
+            </div>
+        </section>
+
     </div>
 
 
-    <script>
-
-        const darkmode = document.querySelector('.changes');
-        const random = document.querySelector('.random');
-
-        darkmode.addEventListener('click', function () {
-            // var element = document.getElementById("myDIV");
-            // element.classList.toggle("mystyle");
-            document.body.style.color = 'white';
-            document.body.style.backgroundColor = 'black';
-            darkmode.classList.toggle('changes');
-
-
-        });
-
-        random.addEventListener('click', function () {
-            document.body.style.color = 'white';
-            document.body.style.backgroundColor = 'salmon';
-        });
-
-        // console.log(modeOn);
-
+    <script src="playColor.js">
 
     </script>
 </body>
